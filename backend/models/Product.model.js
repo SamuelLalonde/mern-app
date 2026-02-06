@@ -1,17 +1,18 @@
 import mongoose from 'mongoose';
 
+// product has name, price, and image
 const productSchema = new mongoose.Schema({
     name:{
         type: String,
-        required: True
+        required: true
     },
     price:{
         type: Number,
-        required: True
+        required: true
     },
     image: {
         type: String,
-        required: True
+        required: true
     },
 }, { 
     timestamps: true //created at, updated at

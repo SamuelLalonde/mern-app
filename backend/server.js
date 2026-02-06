@@ -1,12 +1,15 @@
 import express from "express";
 import dotenv from "dotenv";
 import { connectDB } from './config/db.js';
+import Product from "./models/product.model.js";
 
 dotenv.config();
 
 const app = express();
 
-app.post("/products", async (req, res) => {
+app.use(express.json()); // we can acccept json data in the req.body
+
+app.post("/api/products", async (req, res) => {
     const product = req.body; // user will send this data
 
     if(!product.name || !product.price || !product.image) {
@@ -24,9 +27,18 @@ app.post("/products", async (req, res) => {
     }
 });
 
-// postman test
+app.delete("/api/products/:id", async (req, res) => {
+    const {id} = req.params
+    console.log("id:", id);
 
-//console.log(process.env.MONGO_URI);
+    try {
+        await Product.findByIdAndDelete(id)
+        res.status(200).json({ success: true, message: "Product deleted" });
+    } catch (error) {
+        res.status(404).json({ success: false, message: "Product not found" })
+    }
+
+});
 
 app.listen(3000, () => {
     connectDB();
