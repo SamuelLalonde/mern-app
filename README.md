@@ -110,7 +110,7 @@ mern-app/
 
 ## Learning Goals
 
-* Understand full-stack application architecture
+* Understand full-stack development
 * Practice REST API design using Express
 * Improve state management in React
 * Learn integration between frontend and backend systems
