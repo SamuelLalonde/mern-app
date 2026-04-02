@@ -149,4 +149,4 @@ mern-app/
 ## Author
 
 Samuel Lalonde
-GitHub: [https://github.com/yourusername](https://github.com/yourusername)
+GitHub: [https://github.com/samuellalonde](https://github.com/samuellalonde)
