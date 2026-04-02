@@ -1,6 +1,8 @@
 # MERN E-Commerce App
 
-Personal project to learn the MERN stack.
+Full-stack e-commerce web application built by following a tutorial to develop a practical understanding of the MERN stack and full-stack architecture.
+
+>https://www.youtube.com/watch?v=O3BUHwfHf84
 
 ---
 
@@ -104,7 +106,7 @@ mern-app/
 
 * Backend API ✅
 * MongoDB integration ✅ 
-* Frontend UI completion
+* Frontend UI completion 🔄 
 
 ---
 
